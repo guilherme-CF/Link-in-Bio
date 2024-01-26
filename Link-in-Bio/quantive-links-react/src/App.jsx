@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Links Quantive</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+import './App.css'
+
+function App() {
+
+  return (
     <div class="conteinerMain">
       <div class="conteinerHead">
         <div class="imgPerfil">
-          <img src="./imgs/img-quantive.png" alt="Img logo" />
+          <img src="../src/imgs/img-quantive.png" alt="Img logo" />
         </div>
         <div class="descricao">
           <h3></h3>
@@ -40,20 +36,22 @@
       <div class="conteinerIcon">
         <div>
           <a href="https://www.facebook.com/Quantive/?locale=pt_BR"
-            ><img src="./imgs/icons-face-50.png" alt="icon-1"
+            ><img src="../src/imgs/icons-face-50.png" alt="icon-1"
           /></a>
         </div>
         <div>
           <a href="https://wa.me/558530236062"
-            ><img src="./imgs/icons-wpp-50.png" alt="icon-2"
+            ><img src="../src/imgs/icons-wpp-50.png" alt="icon-2"
           /></a>
         </div>
         <div>
           <a href="https://www.instagram.com/quantivehost/"
-            ><img src="./imgs/icons-insta-50.png" alt="icon-3"
+            ><img src="../src/imgs/icons-insta-50.png" alt="icon-3"
           /></a>
         </div>
       </div>
     </div>
-  </body>
-</html>
+  )
+}
+
+export default App
