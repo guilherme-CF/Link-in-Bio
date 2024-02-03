@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Verdana, sans-serif;
 }
@@ -16,14 +16,14 @@ body {
   /* background: rgb(14, 121, 198); */
   background: rgb(54,83,240);
   background: linear-gradient(33deg, rgba(54,83,240,1) 14%, rgba(255,255,255,1) 100%);
-
   overflow: hidden;
+
 }
 
 .conteinerMain {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .containerHead {
@@ -31,15 +31,29 @@ body {
  
 }
 
+.imgPerfil {
+  width: 350px;
+}
+
+@media (max-width: 350px) {
+  .imgPerfil {
+    width: 250px;
+  }
+
+  body {
+    box-sizing:unset;
+  }
+}
+
 .conteinerBody {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   margin-top: 50px;
   gap: 15px;
 }
 
-h3 {
+h3, h4 {
   color: white;
   text-align: center;
 }
@@ -58,7 +72,7 @@ a.button {
   display: inline-flex;
   justify-content: center;
   background-color: white;
-  color: black;
+  color: #005a92;
   border-radius: 30px;
   transition: 200ms ease-in-out;
   border: 2px solid rgb(255, 255, 255);
@@ -67,9 +81,8 @@ a.button {
 }
 
 a.button:hover {
-  border-radius: 5px;
   color: rgb(255, 255, 255);
-  background-color: transparent;
+  background-color: #005a92;;
 }
 
 footer.container {
@@ -83,10 +96,10 @@ footer.container {
 .container .social {
   text-align: center;
   padding-bottom: 25px;
-  color: white;
 }
 
 .container .social a {
+  box-sizing: border-box;
   font-size: 24px;
   color: white;
   border: 1px solid white;
@@ -107,40 +120,5 @@ footer .social a:hover {
 }
 
 h4 {
-  color: #ffffff;
   margin-top: 60px;
 }
-
-.nuvem {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  display: none;
-}
-
-.nuvem1 {
-  right: 0%;
-  top: 150px;
-  height: auto;
-}
-
-.nuvem2 {
-  bottom: 200px;
-}
-
-.nuvem3 {
-  
-  bottom: 50px;
-}
-
-@media (max-width: 500px) {
-  h3 {
-    display: none;
-  }
-}
-/* 
-@media (max-width: 700px) {
-  .nuvem {
-
-  }
-} */
