@@ -39,7 +39,7 @@ function App() {
               <a href="https://www.facebook.com/speedcloudbr/?paipv=0&eav=AfZi47P5U5jpueFlG4yusKxL_qV5zYDqIv9U_RUkWK2ITfjyXvMUd-MaDDjAhPsk9mk&_rdr#_=_" target='_blank'>
               <FaFacebookF />
               </a>
-              <a href="https:j//www.instagram.com/speedcloud_/" target='_blank'>
+              <a href="https://www.instagram.com/speedcloud_/" target='_blank'>
               <FaInstagram />
               </a>
               <a href="https://api.whatsapp.com/send?phone=558530236062&text=Ol%C3%A1" target='_blank'>
