@@ -82,7 +82,18 @@ a.button {
 
 a.button:hover {
   color: rgb(255, 255, 255);
-  background-color: #005a92;
+  background-color: #005a92;;
+}
+
+footer.container {
+  bottom: 0;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  max-width: 100%;
+}
+
+.container .social {
   text-align: center;
   padding-bottom: 25px;
 }
