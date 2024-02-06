@@ -13,17 +13,14 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background: rgb(14, 121, 198); */
-  background: rgb(54,83,240);
-  background: linear-gradient(33deg, rgba(54,83,240,1) 14%, rgba(255,255,255,1) 100%);
   overflow: hidden;
-
 }
 
 .conteinerMain {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 200px;
 }
 
 .containerHead {
@@ -46,48 +43,79 @@ body {
 }
 
 .conteinerBody {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 50px;
   gap: 15px;
 }
 
-h3, h4 {
-  color: white;
+h3{
+  /* color: #005a92; */
   text-align: center;
+  color: white;
+}
+
+h4 {
+  color: rgb(9, 41, 111);
+  font-size: 20px;
+  margin-bottom: -15px;
 }
 
 .conteinerIcon {
+  color: rgb(19, 49, 113);
+  position: absolute;
   display: flex;
   justify-content: center;
   gap: 16px;
   padding: 0px 16px;
   align-items: center;
+  flex-direction: column;
+  bottom: 20px;
 }
 
 a.button {
   padding: 10px;
   text-decoration: none;
   display: inline-flex;
-  justify-content: center;
-  background-color: white;
-  color: #005a92;
+  justify-content: space-between;
   border-radius: 30px;
   transition: 200ms ease-in-out;
-  border: 2px solid rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.099) 2px 2px 8px 2px;
+  box-shadow: rgba(0, 0, 0, 0.144) 2px 2px 10px 5px;
   font-weight: bold;
+  font-size: 20px;
+  align-items: center;
+  color: #005a92;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
 a.button:hover {
-  color: rgb(255, 255, 255);
-  background-color: #005a92;;
+  background-color: #005a92;
+  color: #ffffff;
 }
 
+.iconbtn {
+  font-size: 25px;
+  margin-inline: 15px;
+}
+
+.more {
+  transition: 200ms ease-in-out;
+  border-radius: 30px;
+  padding: 4px;
+}
+.more:hover {
+  background-color: #00000011;
+}
+
+a.button span {
+  font-size: 17px;
+}
+
+
 footer.container {
-  bottom: 0;
-  color: white;
+  font-weight: bold;
   text-align: center;
   background-color: transparent;
   max-width: 100%;
@@ -95,14 +123,14 @@ footer.container {
 
 .container .social {
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 55px;
 }
 
 .container .social a {
   box-sizing: border-box;
   font-size: 24px;
-  color: white;
-  border: 1px solid white;
+  color: rgb(35, 63, 124);
+  border: 1px solid rgb(9, 51, 143);;
   width: 40px;
   height: 40px;
   line-height: 38px;
@@ -119,6 +147,8 @@ footer .social a:hover {
   opacity: 1;
 }
 
-h4 {
-  margin-top: 60px;
+@media (max-width: 768px) {
+  .conteinerBody {
+    width: 80%;
+  }
 }
