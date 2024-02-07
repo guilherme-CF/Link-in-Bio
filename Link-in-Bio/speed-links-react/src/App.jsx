@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from 'react';
+
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
@@ -13,6 +15,28 @@ import './App.css';
 import './animation.css';
 
 function App() {
+
+  const [fraseAleatoria, setFraseAleatoria] = useState('');
+  
+  const frases = [
+    'Em cada servidor, a excelência brasileira em hospedagem',
+    'Desbloqueando possibilidades com serviços de hospedagem',
+    'Sua solução em Servidores Dedicados',
+    'Colocation com a melhor infra localizada no Brasil',
+    'Para cada demanda, uma solução ideal na nuvem'
+  ];
+
+  useEffect(() => {
+    // Função para selecionar uma frase aleatória do array
+    function selecionarFraseAleatoria() {
+      const indiceAleatorio = Math.floor(Math.random() * frases.length);
+      setFraseAleatoria(frases[indiceAleatorio]);
+    }
+
+    // Chama a função ao carregar a página
+    selecionarFraseAleatoria();
+  }, []); // O array vazio como segundo argumento faz com que o useEffect seja executado apenas uma vez, após a montagem do componente
+  
 
   return (
     <>
@@ -30,14 +54,14 @@ function App() {
         </div>
 
         <div class="conteinerBody">
-            <h3>Para cada demanda, uma solução ideal na nuvem</h3>
+            <h3>{fraseAleatoria}</h3>
           
             <a href="https://www.speedcloud.com.br/" className="button" target='_blank'>
-            <TbWorld className="iconbtn site" /> <span>Nosso Site</span> <IoIosMore className="iconbtn more"/>
+            <TbWorld className="iconbtn site" /> <span>Nosso Site</span> 
             </a>
           
             <a href="https://api.whatsapp.com/send?phone=558530236062&text=Ol%C3%A1" className="button" target='_blank'>
-              <IoLogoWhatsapp className="iconbtn zap"/> <span>Chama no Zap</span> <IoIosMore className="iconbtn more"/>
+              <IoLogoWhatsapp className="iconbtn zap"/> <span>Chama no Zap</span>
             </a>
         
         </div>
