@@ -56,13 +56,21 @@ function App() {
         <div class="conteinerBody">
             <h3>{fraseAleatoria}</h3>
           
-            <a href="https://www.speedcloud.com.br/" className="button" target='_blank'>
-            <TbWorld className="iconbtn site" /> <span>Nosso Site</span> 
-            </a>
-          
-            <a href="https://api.whatsapp.com/send?phone=558530236062&text=Ol%C3%A1" className="button" target='_blank'>
-              <IoLogoWhatsapp className="iconbtn zap"/> <span>Chama no Zap</span>
-            </a>
+            <ul>
+              <li>
+                <span></span><span></span><span></span><span></span>
+                <a href="https://www.speedcloud.com.br/" className="button" target='_blank'>
+                <TbWorld className="iconbtn site" /> <h5>Nosso Site</h5> 
+                </a>
+              </li>
+            
+              <li>
+                  <span></span><span></span><span></span><span></span>
+                <a href="https://api.whatsapp.com/send?phone=558530236062&text=Ol%C3%A1" className="button" target='_blank'>
+                  <IoLogoWhatsapp className="iconbtn zap"/> <h5>Chama no Zap</h5>
+                </a>
+              </li>
+            </ul>
         
         </div>
         <div class="conteinerIcon">

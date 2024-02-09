@@ -4,9 +4,11 @@
 
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Verdana, sans-serif;
+  overflow: hidden;
 }
 
 body {  
+  width: 100%;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
@@ -17,6 +19,7 @@ body {
 }
 
 .conteinerMain {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,11 +33,16 @@ body {
 
 .imgPerfil {
   width: 350px;
+  margin-top: 20vh;
 }
 
 @media (max-width: 350px) {
   .imgPerfil {
     width: 250px;
+  }
+
+  ul {
+    transform: scale(0.8);
   }
 
   body {
@@ -52,24 +60,67 @@ body {
 }
 
 h3{
-  /* color: #005a92; */
   text-align: center;
   color: white;
 }
 
 h4 {
-  color: rgb(9, 41, 111);
+  color: rgb(17, 81, 218);
   font-size: 20px;
   margin-bottom: -15px;
+  font-weight: 900;
+}
+
+ul {
+list-style-type: none;
+}
+
+ul li {
+  background-color: white;
+  --c: rgb(255, 255, 255);
+  color: var(--c);
+  border-radius: 40px;
+  border: 2px solid white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+ul li span {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 15%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+ul li:hover span {
+  --c: #005A92;
+  transform: translateY(0) scale(2);
+}
+
+ul li span:nth-child(1) {
+  --n: 1; 
+}
+
+ul li span:nth-child(2) {
+  --n: 2;
 }
 
 .conteinerIcon {
-  color: rgb(19, 49, 113);
+  color: rgb(17, 81, 218);
   position: absolute;
   display: flex;
   justify-content: center;
   gap: 16px;
-  padding: 0px 16px;
   align-items: center;
   flex-direction: column;
   bottom: 20px;
@@ -80,20 +131,21 @@ a.button {
   text-decoration: none;
   display: flex;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 70px;
   transition: 200ms ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.144) 2px 2px 10px 5px;
   font-weight: bold;
   font-size: 20px;
   color: #005a92;
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
   width: 300px;
   max-width: 450px;
 }
 
+ul {
+  border-radius: 50px;
+}
+
 a.button:hover {
-  background-color: #005a92;
   color: #ffffff;
 }
 
@@ -103,16 +155,7 @@ a.button:hover {
   text-align: left;
 }
 
-.more {
-  transition: 200ms ease-in-out;
-  border-radius: 30px;
-  padding: 4px;
-}
-.more:hover {
-  background-color: #00000011;
-}
-
-a.button span {
+a.button h5 {
   text-align: center;
   font-size: 17px;
   width: 64%;
@@ -127,14 +170,14 @@ footer.container {
 
 .container .social {
   text-align: center;
-  padding-bottom: 55px;
+  margin-bottom: 30px;
 }
 
 .container .social a {
   box-sizing: border-box;
   font-size: 24px;
-  color: rgb(35, 63, 124);
-  border: 1px solid rgb(9, 51, 143);;
+  color: rgb(17, 81, 218);
+  border: 1px solid rgb(17, 81, 218);
   width: 40px;
   height: 40px;
   line-height: 38px;
@@ -145,6 +188,9 @@ footer.container {
   opacity: 0.75;
   padding: 5px;
   margin-top: 10px;
+  transition: ease-in-out 150ms;
+  background-color: rgb(37, 98, 189);
+  color: white;
 }
 
 footer .social a:hover {
@@ -152,7 +198,7 @@ footer .social a:hover {
 }
 
 @media (max-width: 768px) {
-  .conteinerBody {
+  .conteinerBody h3{
     width: 80%;
   }
 }
