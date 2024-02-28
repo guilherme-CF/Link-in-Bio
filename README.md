@@ -1,3 +1,3 @@
 # Link-in-Bio
 
-São 3 paginas simples de link para empresa.
+São 4 paginas simples de link para empresa.
