@@ -4,26 +4,25 @@
 
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Verdana, sans-serif;
-  overflow: hidden;
+
 }
 
 body {  
   width: 100%;
   background-repeat: no-repeat;
-  height: 100vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .conteinerMain {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 200px;
 }
 
 .containerHead {
@@ -33,31 +32,9 @@ body {
 
 .imgPerfil {
   width: 350px;
-  margin-top: 20vh;
 }
 
-@media (max-width: 350px) {
-  .imgPerfil {
-    width: 250px;
-  }
 
-  ul {
-    transform: scale(0.8);
-  }
-
-  body {
-    box-sizing:unset;
-  }
-}
-
-.conteinerBody {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  gap: 15px;
-  align-items: center;
-}
 
 h3 {
   text-align: center;
@@ -67,18 +44,16 @@ h3 {
 h4 {
   color: white;
   font-size: 20px;
-  margin-bottom: -15px;
   font-weight: 900;
 }
 
 ul {
-list-style-type: none;
+  list-style-type: none;
+  width: 350px;
 }
 
 ul li {
   background-color: white;
-  --c: rgb(255, 255, 255);
-  color: var(--c);
   border-radius: 40px;
   border: 2px solid white;
   text-align: center;
@@ -89,41 +64,13 @@ ul li {
   margin: 1em;
 }
 
-ul li span {
-  position: absolute;
-  width: 35%;
-  height: 100%;
-  background-color: var(--c);
-  transform: translateY(150%);
-  border-radius: 50%;
-  left: calc((var(--n) - 1) * 15%);
-  transition: 0.5s;
-  transition-delay: calc((var(--n) - 1) * 0.1s);
-  z-index: -1;
-}
-
-/* ul li:hover span {
-  --c: #005A92;
-  transform: translateY(0) scale(2);
-}
-
-ul li span:nth-child(1) {
-  --n: 1; 
-}
-
-ul li span:nth-child(2) {
-  --n: 2;
-} */
-
 .conteinerIcon {
   color: white;
-  position: absolute;
   display: flex;
-  justify-content: center;
   gap: 16px;
   align-items: center;
   flex-direction: column;
-  bottom: 20px;
+  margin-top: 20px;
 }
 
 a.button {
@@ -137,17 +84,7 @@ a.button {
   font-weight: bold;
   font-size: 20px;
   color: #000000;
-  width: 300px;
-  max-width: 450px;
 }
-
-ul {
-  border-radius: 50px;
-}
-
-/* a.button:hover {
-  color: #ffffff;
-} */
 
 .iconbtn {
   font-size: 25px;
@@ -165,8 +102,7 @@ a.button h5 {
 footer.container {
   font-weight: bold;
   text-align: center;
-  background-color: transparent;
-  max-width: 100%;
+  color: white;
 }
 
 .container .social {
@@ -189,7 +125,6 @@ footer.container {
   padding: 5px;
   margin-top: 10px;
   transition: ease-in-out 150ms;
-  /* background-color: rgb(37, 98, 189); */
   color: white;
 }
 
@@ -197,8 +132,16 @@ footer .social a:hover {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
-  .conteinerBody h3{
-    width: 80%;
+footer p {
+  margin-inline: 30px;
+}
+
+@media (max-width: 350px) {
+  .imgPerfil {
+    width: 300px;
+  }
+
+  a.button {
+    padding: 7px;
   }
 }
