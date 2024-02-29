@@ -24,6 +24,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 200px;
+ 
 }
 
 .containerHead {
@@ -33,7 +34,7 @@ body {
 
 .imgPerfil {
   width: 350px;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 @media (max-width: 350px) {
