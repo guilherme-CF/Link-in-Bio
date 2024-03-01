@@ -85,7 +85,7 @@ a.button {
   width: 100%;
   font-weight: bold;
   font-size: 20px;
-  color: #000000;
+  color: #66193b;
 }
 
 a.button:hover {
@@ -145,7 +145,7 @@ footer .social a:hover {
 @media (max-width: 400px) {
   .imgPerfil {
     width: 300px;
-    margin-top: 50px;
+
   }
 
   li, ul {
