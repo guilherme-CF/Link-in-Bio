@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -6,14 +6,12 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdVerifiedUser } from "react-icons/md";
-import { FaExternalLinkAlt } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { TbWorld } from "react-icons/tb";
 import { IoLogoInstagram } from 'react-icons/io';
 
 import logo from '/assets/logo.png'
 import './App.css';
-import './animation.css';
 
 function App() {
 
@@ -32,25 +30,19 @@ function App() {
         
           <li>
             <a href="#" className="button" target='_blank'>
-              <IoLogoWhatsapp className="iconbtn zap"/> <h5>Whatsapp</h5>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" className="button" target='_blank'>
-              <FaFacebook className="iconbtn zap"/> <h5>Facebook</h5>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" className="button" target='_blank'>
-              <IoLogoInstagram className="iconbtn zap"/> <h5>Instagram</h5>
+              <IoLogoWhatsapp className="iconbtn zap"/> <h5>Christina Castro</h5>
             </a>
           </li>
 
           <li>
             <a href="#" className="button" target='_blank'>
               <IoLogoWhatsapp className="iconbtn zap"/> <h5>Whatsapp</h5>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" className="button" target='_blank'>
+              <FaFacebook className="iconbtn facebook"/> <h5>Facebook</h5>
             </a>
           </li>
         </ul>
