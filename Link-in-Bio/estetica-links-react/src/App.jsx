@@ -4,13 +4,16 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineSchedule } from "react-icons/ai";
 import { MdVerifiedUser } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { TbWorld } from "react-icons/tb";
-import { IoLogoInstagram } from 'react-icons/io';
 
 import logo from '/assets/logo.png'
+import nail from '/assets/nail.png';
+import lash from '/assets/lash.png';
+import hand from '/assets/hand.png';
+import eyebrow from '/assets/eyebrow.png';
+
 import './App.css';
 
 function App() {
@@ -24,25 +27,25 @@ function App() {
         <ul>
           <li>
             <a href="#" className="button" target='_blank'>
-            <TbWorld className="iconbtn site" /> <h5>Agendamento</h5> 
+            <AiOutlineSchedule className="iconbtn site" /> <h5>Agendamento</h5> 
             </a>
           </li>
         
           <li>
-            <a href="#" className="button" target='_blank'>
-              <IoLogoWhatsapp className="iconbtn zap"/> <h5>Christina Castro</h5>
+            <a href="https://wa.me/5585996556596" className="button" target='_blank'>
+              <img src={nail} alt="nail" className='iconbtn image'/> <h5>Nails Desing</h5>
             </a>
           </li>
 
           <li>
-            <a href="#" className="button" target='_blank'>
-              <IoLogoWhatsapp className="iconbtn zap"/> <h5>Whatsapp</h5>
+            <a href="https://wa.me/5585986772193" className="button" target='_blank'>
+              <img src={lash} alt='lash' className="iconbtn image"/> <h5>Lash Desing</h5>
             </a>
           </li>
 
           <li>
-            <a href="#" className="button" target='_blank'>
-              <FaFacebook className="iconbtn facebook"/> <h5>Facebook</h5>
+            <a href="https://wa.me/5585986207100" className="button" target='_blank'>
+              <img src={eyebrow} alt='eyebrow' className="iconbtn image"/> <h5>Micro Labial</h5>
             </a>
           </li>
         </ul>
@@ -58,9 +61,6 @@ function App() {
               </a>
               <a href="https://api.whatsapp.com/send?phone=558530236062&text=Ol%C3%A1" target='_blank'>
               <FaWhatsapp />
-              </a>
-              <a href="https://www.linkedin.com/company/101826655/admin/feed/posts/?feedType=following" target='_blank'>
-              <FaLinkedinIn />
               </a>
           </div> 
           <p> Copyright © 2024. Estética Christina Castro | Todos os direitos reservados. <MdVerifiedUser /></p>
