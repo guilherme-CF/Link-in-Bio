@@ -10,13 +10,12 @@
 body {  
   background-image: url(../assets/background.png);
   width: 100%;
-
+  max-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-size: cover;
-
+  overflow: hidden;
 }
 
 .conteinerMain {
@@ -24,13 +23,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
   align-items: center;
 }
 
 .imgPerfil {
-  margin-top: 140px;
   width: 350px;
+  position: absolute;
+  margin-top: 80px;
 }
 
 h3 {
@@ -47,6 +46,7 @@ h4 {
 ul {
   list-style-type: none;
   width: 350px;
+  margin-top: 30vh;
 }
 
 li {
@@ -88,18 +88,24 @@ a.button {
 a.button:hover {
   background-color: transparent;
   color: white
-  
+}
+
+a.button:hover .image {
+  filter: brightness(0) invert(1);
+}
+
+.image {
+  transition: 200ms ease-in-out;
+  width: 25px;
 }
 
 .iconbtn {
   font-size: 25px;
   margin-inline: 15px;
   text-align: left;
+  color: rgba(0, 0, 0, 0.925);
 }
 
-.image {
-  width: 25px;
-}
 
 a.button h5 {
   text-align: center;
@@ -111,11 +117,13 @@ footer.container {
   font-weight: bold;
   text-align: center;
   color: white;
-
+  margin-top: 80px;
+  margin: 10px;
 }
 
 footer p {
   margin-inline: 10px;
+  font-size: 13px;
 }
 
 .container .social {
@@ -148,7 +156,6 @@ footer .social a:hover {
 @media (max-width: 400px) {
   .imgPerfil {
     width: 300px;
-
   }
 
   li, ul {
@@ -162,13 +169,14 @@ footer .social a:hover {
 }
 
 @media (min-height: 800px) {
-  .imgPerfil {
-    margin-bottom: -100px;
+  .conteinerMain {
+    justify-content: space-between;
   }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 700px) {
   .imgPerfil {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
+

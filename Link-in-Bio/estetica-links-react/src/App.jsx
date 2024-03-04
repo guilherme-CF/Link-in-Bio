@@ -3,10 +3,9 @@ import React from 'react';
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { AiOutlineSchedule } from "react-icons/ai";
+import { FaRegCalendarAlt } from "react-icons/fa";
 import { MdVerifiedUser } from "react-icons/md";
-import { IoLogoWhatsapp } from "react-icons/io";
+
 
 import logo from '/assets/logo.png'
 import nail from '/assets/nail.png';
@@ -26,26 +25,27 @@ function App() {
        
         <ul>
           <li>
-            <a href="#" className="button" target='_blank'>
-            <AiOutlineSchedule className="iconbtn site" /> <h5>Agendamento</h5> 
+            <a href="https://wa.me/5585992062525" className="button" target='_blank'>
+            <FaRegCalendarAlt className="iconbtn image" /> <h5>Agendamento</h5> 
             </a>
           </li>
         
           <li>
             <a href="https://wa.me/5585996556596" className="button" target='_blank'>
-              <img src={nail} alt="nail" className='iconbtn image'/> <h5>Nails Desing</h5>
+              <img src={nail} alt="nail" className='iconbtn image nail'/> 
+              <h5>Nails Desing</h5>
             </a>
           </li>
 
           <li>
             <a href="https://wa.me/5585986772193" className="button" target='_blank'>
-              <img src={lash} alt='lash' className="iconbtn image"/> <h5>Lash Desing</h5>
+              <img src={lash} alt='lash' className="iconbtn image lash"/> <h5>Lash Desing</h5>
             </a>
           </li>
 
           <li>
             <a href="https://wa.me/5585986207100" className="button" target='_blank'>
-              <img src={eyebrow} alt='eyebrow' className="iconbtn image"/> <h5>Micro Labial</h5>
+              <img src={eyebrow} alt='eyebrow' className="iconbtn image eyebrow"/> <h5>Micropigmentação</h5>
             </a>
           </li>
         </ul>
@@ -59,7 +59,7 @@ function App() {
               <a href="https://www.instagram.com/speedcloud_/" target='_blank'>
               <FaInstagram />
               </a>
-              <a href="https://api.whatsapp.com/send?phone=558530236062&text=Ol%C3%A1" target='_blank'>
+              <a href="https://wa.me/5585992062525" target='_blank'>
               <FaWhatsapp />
               </a>
           </div> 
