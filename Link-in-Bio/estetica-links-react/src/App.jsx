@@ -53,12 +53,13 @@ function App() {
         <footer class="container">
           <h4>Redes Sociais</h4>
           <div class="social">
-              <a href="https://www.facebook.com/speedcloudbr/?paipv=0&eav=AfZi47P5U5jpueFlG4yusKxL_qV5zYDqIv9U_RUkWK2ITfjyXvMUd-MaDDjAhPsk9mk&_rdr#_=_" target='_blank'>
+              <a href="https://www.facebook.com/christina.castro.1048554" target='_blank'>
               <FaFacebookF />
               </a>
-              <a href="https://www.instagram.com/speedcloud_/" target='_blank'>
+              <a href="https://www.instagram.com/christina_castrro/" target='_blank'>
               <FaInstagram />
               </a>
+              
               <a href="https://wa.me/5585992062525" target='_blank'>
               <FaWhatsapp />
               </a>
