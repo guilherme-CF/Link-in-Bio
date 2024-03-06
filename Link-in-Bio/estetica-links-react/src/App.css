@@ -173,7 +173,7 @@ footer .social a:hover {
   }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 750px) {
   .imgPerfil {
     margin-top: 20px;
   }
