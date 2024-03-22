@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+
+}
+
+body {  
+  background-image: url(../assets/background.png);
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.conteinerMain {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgPerfil {
+  width: 200px;
+  position: absolute;
+  margin-top: 80px;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+h4 {
+  color: white;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+ul {
+  list-style-type: none;
+  width: 350px;
+  margin-top: 30vh;
+}
+
+li {
+  border-radius: 40px;
+  border: 2px solid white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.144) 2px 2px 10px 5px;
+  margin-top: 1em;
+
+}
+
+.conteinerIcon {
+  color: white;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+a.button {
+  padding: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: 200ms ease-in-out;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  color: #66193b;
+  background-color: #f5f5f5ec;
+}
+
+a.button:hover {
+  background-color: transparent;
+  color: white
+}
+
+a.button:hover .image {
+  filter: brightness(0) invert(1);
+}
+
+.image {
+  transition: 200ms ease-in-out;
+  width: 25px;
+}
+
+.iconbtn {
+  font-size: 25px;
+  margin-inline: 15px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.925);
+}
+
+
+a.button h5 {
+  text-align: center;
+  font-size: 17px;
+  width: 64%;
+}
+
+footer.container {
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-top: 80px;
+  margin: 10px;
+}
+
+footer p {
+  margin-inline: 10px;
+  font-size: 12px;
+}
+
+.container .social {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.container .social a {
+  box-sizing: border-box;
+  font-size: 22px;
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 4px;
+  opacity: 0.75;
+  padding: 5px;
+  margin-top: 10px;
+  transition: ease-in-out 150ms;
+  color: white;
+}
+
+footer .social a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 400px) {
+  .imgPerfil {
+    width: 150px;
+  }
+
+  li, ul {
+    width: 250px;
+  }
+
+  a.button {
+    padding-inline: 0px;
+  }
+
+  .orcam  {
+    font-size: 14px;
+  }
+}
+
+@media (min-height: 800px) {
+  .conteinerMain {
+    justify-content: space-between;
+  }
+}
+
+@media (max-height: 750px) {
+  .imgPerfil {
+    margin-top: 100px;
+  }
+}
+
