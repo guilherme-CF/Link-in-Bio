@@ -15,7 +15,6 @@ import { AiOutlineContainer } from "react-icons/ai";
 
 import { IoNewspaperSharp } from "react-icons/io5";
 
-
 import logo from '/assets/logo.png'
 
 
@@ -25,10 +24,9 @@ function App() {
 
   return (
     <>
-      <div class="conteinerMain">
-        
+
         <img src={logo} className="imgPerfil" alt="Img logo" />
-       
+    
         <ul>
           <li>
             <a href="https://www.085.digital/" className="button" target='_blank'>
@@ -48,7 +46,8 @@ function App() {
             </a>
           </li>
         </ul>
-        
+      
+
         <footer class="container">
           <h4>Redes Sociais</h4>
           <div class="social">
@@ -75,7 +74,7 @@ function App() {
           <p> Copyright © 2024. 085 Digital | Todos os direitos reservados. <MdVerifiedUser /></p>
         </footer>
     
-      </div>
+      
     </>
   )
 }
