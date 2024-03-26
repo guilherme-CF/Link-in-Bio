@@ -12,8 +12,9 @@ import { MdVerifiedUser } from "react-icons/md";
 import { MdAccessibilityNew } from "react-icons/md";
 import { AiOutlineFileProtect } from "react-icons/ai";
 import { AiOutlineContainer } from "react-icons/ai";
+import { IoIosPaper } from "react-icons/io";
+import { MdAssignmentAdd } from "react-icons/md";
 
-import { IoNewspaperSharp } from "react-icons/io5";
 
 import logo from '/assets/logo.png'
 
@@ -36,13 +37,13 @@ function App() {
         
           <li>
             <a href="https://wa.me/5585996849669" className="button" target='_blank'>
-              <AiOutlineFileProtect className='iconbtn image nail'/> <h5 style={{ fontSize: 14 }}>Solicite um orçamento</h5>
+              <MdAssignmentAdd className='iconbtn image nail'/> <h5 >Agende sua reunião</h5>
             </a>
           </li>
 
           <li>
             <a href="https://wa.me/5585986772193" className="button" target='_blank'>
-              <AiOutlineContainer className="iconbtn image lash"/> <h5>Nosso Blog</h5>
+              <IoIosPaper className="iconbtn image lash"/> <h5>Nosso <br /> Blog</h5>
             </a>
           </li>
         </ul>

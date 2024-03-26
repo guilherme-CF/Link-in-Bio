@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
 * {
-  padding: 0;
-  margin: 0;
+  
 
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Verdana, sans-serif;
-
+  
+    font-family: "Poppins", sans-serif;
 }
 
 body {  
@@ -32,7 +32,7 @@ body {
 
 .imgPerfil {
   width: 200px;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -45,10 +45,12 @@ h4 {
   color: white;
   font-size: 17px;
   font-weight: 900;
+  margin-bottom: 0;
 }
 
 ul {
   list-style-type: none;
+  padding: 0;
   width: 100%;
   /* margin-top: 30vh; */
   justify-content: center;
@@ -79,7 +81,7 @@ a.button {
   text-decoration: none;
   display: flex;
   transition: 200ms ease-in-out;
-  color: #66193b;
+  color: black;
   padding-inline: 0px;
   width: 100%;
   background-color: #f5f5f5ec;
@@ -101,16 +103,17 @@ a.button:hover .image {
 
 .iconbtn {
   font-size: 25px;
-  margin-inline: 15px;
+  margin: 10px 5px 10px 25px;
   text-align: left;
   color: rgba(0, 0, 0, 0.925);
 }
 
 
 a.button h5 {
-  text-align: center;
+  margin: 0;
+  align-items: center;
   font-size: 17px;
-  width: 64%;
+  width: 60%;
 }
 
 footer.container {
@@ -133,11 +136,10 @@ footer p {
 }
 
 .container .social a {
-  box-sizing: border-box;
   font-size: 22px;
   border: 1px solid white;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   line-height: 38px;
   display: inline-block;
   align-items: center;
@@ -157,6 +159,8 @@ footer .social a:hover {
 @media (max-width: 400px) {
   .imgPerfil {
     width: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   li {
