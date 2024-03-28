@@ -37,13 +37,13 @@ function App() {
         
           <li>
             <a href="https://wa.me/5585996849669" className="button" target='_blank'>
-              <MdAssignmentAdd className='iconbtn image nail'/> <h5 >Agende sua reunião</h5>
+              <MdAssignmentAdd className='iconbtn image nail'/> <h5 >Agende sua consultoria</h5>
             </a>
           </li>
 
           <li>
-            <a href="https://wa.me/5585986772193" className="button" target='_blank'>
-              <IoIosPaper className="iconbtn image lash"/> <h5>Nosso <br /> Blog</h5>
+            <a href="#" className="button" target='_blank'>
+              <IoIosPaper className="iconbtn image lash"/> <h5>Visite nosso Blog!</h5>
             </a>
           </li>
         </ul>

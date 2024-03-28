@@ -51,14 +51,14 @@ h4 {
 ul {
   list-style-type: none;
   padding: 0;
-  width: 100%;
+  width: 400px;
   /* margin-top: 30vh; */
   justify-content: center;
 }
 
 li {
   border-radius: 40px;
-  width: 250px;
+  
   border: 2px solid white;
   text-align: center;
   position: relative;
@@ -111,9 +111,10 @@ a.button:hover .image {
 
 a.button h5 {
   margin: 0;
+  margin-top: 10px;
   align-items: center;
   font-size: 17px;
-  width: 60%;
+  width: 75%;
 }
 
 footer.container {
@@ -169,5 +170,15 @@ footer .social a:hover {
 
   .orcam  {
     font-size: 14px;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  a.button h5 {
+    width: 60%;
+    font-size: 17px;
+    margin-top: 0;
   }
 }
